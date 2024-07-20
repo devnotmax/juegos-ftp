@@ -1,0 +1,79 @@
+/* Resetea todos los márgenes, rellenos y bordes */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Hereda la tipografía de los elementos */
+body, html {
+  font-family: inherit;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+}
+
+/* Configura una altura mínima para el cuerpo */
+body {
+  min-height: 100%;
+}
+
+/* Asegura que los enlaces no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Configura la lista sin estilo */
+ul, ol {
+  list-style: none;
+}
+
+/* Resetea las tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Resetea las imágenes y otros elementos multimedia */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Resetea los formularios */
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+}
+
+/* Elimina el estilo de subrayado en los enlaces */
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* Asegura que los botones no tengan borde ni fondo */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Configura el box-sizing para que incluya el padding y el border en el width y height */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Hace que el box-sizing sea border-box por defecto */
+html {
+  box-sizing: border-box;
+}
