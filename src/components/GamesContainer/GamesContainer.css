@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #070f2b;
+  --text-color: #fff;
+  --primary-color: #1b1a55;
+  --secondary-color: #535c91;
+  --terciary-color: #9290c3;
+  --quaternary-color: #5d3587;
+}
+
+.game-container {
+  background-color: #401f7177;
+  border-radius: 15px;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.gc-menu {
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 1rem;
+}
+
+.gc-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.gc-menu li {
+  margin: 0;
+}
+
+.gc-menu-button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none; /* Remove underline */
+  display: flex;
+  align-items: center;
+}
+
+.gc-menu-button.active {
+  background-color: var(--quaternary-color); /* Highlight color for active link */
+}
+
+.gc-menu-button:hover {
+  background-color: var(--terciary-color);
+}
+
+.gc-menu-button a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.gc-menu-button i {
+  font-size: 1.2rem;
+}
