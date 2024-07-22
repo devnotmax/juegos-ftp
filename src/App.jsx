@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
+import Home from "./views/Home/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,7 +11,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <h1>Juegos gratis como tu hermana</h1>
+      <div>
+        <Home />
+      </div>
     </>
   );
 }
