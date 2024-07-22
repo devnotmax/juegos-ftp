@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --bg-color: #070f2b;
+  --text-color: #fff;
+  --primary-color: #1b1a55;
+  --secondary-color: #535c91;
+  --terciary-color: #9290c3;
+  --quaternary-color: #5d3587bb;
+}
+
+.game-otd {
+  padding: 60px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.game-otd-title {
+  text-align: left;
+  font-size: 2rem;
+  color: var(--terciary-color);
+  margin-bottom: 10px;
+}
+
+.game-otd-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.game-otd-thumbnail-container {
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-otd-thumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.game-otd-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game-otd-game-title {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.game-otd-description {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.game-otd-play-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--quaternary-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.game-otd-play-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.game-otd-platform,
+.game-otd-genre,
+.game-otd-publisher,
+.game-otd-developer,
+.game-otd-date {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}

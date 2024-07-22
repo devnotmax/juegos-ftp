@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="nav">
       <div className="nav-logo">
         <Link to={"/"}>
-          <p>Juegos gratis</p>
+          <img src="./logo.png" alt="logo" />
         </Link>
       </div>
       <div className="nav-menu">

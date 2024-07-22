@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import Home from "./views/Home/Home";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,8 @@ function App() {
       <div>
         <Home />
       </div>
+    <h2>"Juegos gratuitos como tu hermana :@"</h2>
+      <Footer />
     </>
   );
 }
