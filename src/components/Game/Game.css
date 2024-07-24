@@ -14,8 +14,12 @@ body {
 
 .game-card {
   background-color: var(--quaternary-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
   border-radius: 10px;
   padding: 1rem;
+  gap: 1rem;
   margin: 1rem;
   color: var(--text-color);
   text-align: center;
@@ -23,10 +27,49 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.game-buttons p {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+.game-buttons span {
+  display: flex;
+  background-color: #4699eb;
+  color: var(--text-color);
+  padding: 0.5rem;
+  font-size: 15px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.icon{
+  display: none;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
 .game-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .game-thumbnail-container {
   display: flex;
@@ -58,10 +101,54 @@ body {
   background-color: var(--primary-color);
 }
 
+.btn-play-game:hover .icon {
+  display: flex;
+}
+
+.btn-play-game:hover p{
+  display: none;
+}
+
 .game-info {
-  font-size: 1rem;
+  font-size: 0.6rem;
   margin: 0.5rem 0;
   color: var(--text-color);
+}
+
+.game-info-platform {
+  font-size: 0.7rem;
+  margin: 0.5rem 0;
+  background: none;
+  color: #2a2e33;
+  background-color: #7a8187;
+  border-radius: 5px;
+}
+
+.game-info-text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem 0 0 0;
+  gap: 0.2rem;
+}
+
+.game-info-text p {
+  padding: 0.4rem;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.game-info-text i {
+  color: #7a8187;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bx {

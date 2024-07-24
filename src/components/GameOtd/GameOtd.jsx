@@ -5,7 +5,8 @@ const GameOtd = () => {
   const [otd, setOtd] = useState({});
 
   const game = async (id) => {
-    const url = `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`;
+    const url =
+      "https://free-to-play-games-database.p.rapidapi.com/api/game?id=452";
     const options = {
       method: "GET",
       headers: {
@@ -30,19 +31,25 @@ const GameOtd = () => {
     if (storedGameData.date === today) {
       return storedGameData.id;
     } else {
-      const newId = Math.floor(Math.random() * 584); // Suponiendo que los IDs de los juegos van de 1 a 584
+      const newId = Math.floor(Math.random() * 500); // Suponiendo que los IDs de los juegos van de 1 a 584
       localStorage.setItem(
         "dailyGame",
         JSON.stringify({ date: today, id: newId })
       );
       return newId;
+
+      console.log(newId);
     }
   };
+
+  // console.log(otd);
 
   useEffect(() => {
     const dailyGameId = getDailyGameId();
     game(dailyGameId);
   }, []);
+
+  console.log(getDailyGameId());
 
   return (
     <div className="game-otd">

@@ -25,16 +25,22 @@ const Game = ({
       <div className="game-thumbnail-container">
         <img src={thumbnail} alt={title} className="game-thumbnail" />
       </div>
-      <a
-        href={game_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-play-game"
-      >
-        Jugar ahora
-      </a>
-      <p className="game-info">Género: {genre}</p>
-      <p className="game-info">{platform}</p>
+      <div className="game-buttons">
+        <a
+          href={game_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-play-game"
+        >
+          <i class="bx bx-joystick icon"></i>
+          <p>Jugar ahora</p>
+        </a>
+        <span>FREE</span>
+      </div>
+      <div className="game-info-text">
+        <p className="game-info-platform">{genre}</p>
+        <p className="game-info">{platform}</p>
+      </div>
     </div>
   );
 };
